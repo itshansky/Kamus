@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:id="@+id/nav_home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_baseline_home_24" />
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_kamus_id"
+                android:icon="@drawable/ic_baseline_book_24"
+                android:title="@string/kamus_id" />
+            <item
+            android:id="@+id/nav_kamus_eng"
+            android:icon="@drawable/ic_baseline_book_24"
+            android:title="@string/kamus_eng" />
+    </group>
+
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_audio"
+            android:icon="@drawable/ic_baseline_audiotrack_24"
+            android:title="@string/audio" />
+    </group>
+
+    <group
+        android:id="@+id/grp_3"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_baseline_info_24"
+            android:title="Tentang Aplikasi" />
+    </group>
+
+    <group
+        android:id="@+id/grp_4"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/ic_baseline_exit_to_app_24"
+            android:title="Keluar" />
+    </group>
+
+</menu>
